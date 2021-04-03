@@ -1,7 +1,7 @@
-# Require modules
+# REQUIRE MODULE
   pip install nltk
   
   pip install sqlite
 
-# Run the module
+# RUN THE PROGRAMME
   cmd> python frontend.py
