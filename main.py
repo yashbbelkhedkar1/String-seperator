@@ -16,7 +16,7 @@ def func() :
     name_word = nltk.word_tokenize(sentences[0].title())
     name = []
     for i in nltk.pos_tag(name_word) :
-        if(i[1] == 'NN' or i[1] == 'NNP') :
+        if(i[1] == 'NNP') :
             name.append(i[0])
     name = " ".join(name)
     res.append(name)
@@ -24,7 +24,7 @@ def func() :
     addr_word = nltk.word_tokenize(sentences[1].title())
     addr = []
     for i in nltk.pos_tag(addr_word) :
-        if(i[1] == 'NN' or i[1] == 'NNP') :
+        if(i[1] == 'NNP') :
             addr.append(i[0])
     addr = " ".join(addr)
     res.append(addr)
